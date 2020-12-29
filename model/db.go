@@ -19,7 +19,7 @@ func InitDb() {
 		utils.DbPost,
 		utils.DbName,
 	)
-	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
+	db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 	if err != nil {
 		fmt.Printf("连接数据库失败，请检查参数: ",err)
